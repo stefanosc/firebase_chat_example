@@ -10,17 +10,19 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link type="text/css" rel="stylesheet" href="/css/main.css">
+        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -50,31 +52,7 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div id='messagesDiv' class="messages" ></div>
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="input-group">
-                <span class="input-group-addon">@</span>
-                <input type="text" id='nameInput' class="form-control" placeholder="Your Name">
-              </div>
-            </div>
-            <div class="col-sm-9">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
-                <input type='text' id='messageInput' class="form-control" placeholder='Message'>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-group col-xs-offset-11">
-              <a id="chat-btn" class="btn btn-default" href="#" role="button">Send</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <%= yield %>
       <hr>
 
       <footer>
@@ -83,11 +61,9 @@
     </div> <!-- /container -->
 
     </script>
-        <script src="js/vendor/jquery-1.11.1.min.js"></script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-        <script src="js/chat.js"></script>
+        <script src="/js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="/js/chat.js"></script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
